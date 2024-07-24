@@ -76,12 +76,12 @@ const DashBoardlayout = () => {
               Manage Booking</Link>
               </li>
               <li>
-              <Link to="">
+              <Link to="add-menu">
               <RiMenuAddFill />
         Add Menu</Link>
               </li>
               <li>
-              <Link to="">
+              <Link to="/dashboard/manage-items">
                 <FaEdit/>Manage Items</Link>
               </li>
               <li>

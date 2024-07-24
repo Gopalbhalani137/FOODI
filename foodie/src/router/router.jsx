@@ -8,7 +8,8 @@ import CartPage from "../pages/shop/CartPage";
 import DashBoardlayout from "../layout/DashBoardlayout";
 import DashBoard from "../pages/dashboard/admin/DashBoard";
 import Users from "../pages/dashboard/admin/Users";
-
+import ManageItems from "../pages/dashboard/admin/ManageItems";
+import AddMenu from "../pages/dashboard/admin/AddMenu";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -51,7 +52,15 @@ const router = createBrowserRouter([
       {
         path: "users",
         element: <Users />
-      }
+      },{
+        path: "manage-items",
+        element: <ManageItems/>
+      },
+      {
+        path: 'add-menu',
+        element: <AddMenu/>
+      },
+      
     ]
   }
 ]);
