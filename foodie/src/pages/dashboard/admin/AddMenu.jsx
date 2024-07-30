@@ -22,7 +22,7 @@ const AddMenu = () => {
         "content-type": "multipart/form-data",
       },
     });
-    // console.log(hostingImg.data)
+    console.log("hostingimg"+hostingImg.data)
     if (hostingImg.data.success) {
       const menuItem = {
         name: data.name,
@@ -32,7 +32,7 @@ const AddMenu = () => {
         image: hostingImg.data.data.display_url
       };
 
-      // console.log(menuItem);
+      console.log("menuuuuuuu"+menuItem);
       const postMenuItem = axiosSecure.post('/menu', menuItem);
       if(postMenuItem){
         reset()
@@ -109,7 +109,7 @@ const AddMenu = () => {
           {/* 3rd row */}
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Recipe Details</span>
+              <span className="label-text">Recipe Details*</span>
             </label>
             <textarea
               {...register("recipe", { required: true })}
@@ -127,7 +127,7 @@ const AddMenu = () => {
             />
           </div>
 
-          <button className="btn bg-green text-white px-6">
+          <button className="btn bg-yellow hover:bg-yellow text-white px-6">
             Add Item <FaUtensils />
           </button>
         </form>
